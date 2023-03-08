@@ -1,6 +1,10 @@
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url("shopping.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     height: 100vh;
@@ -12,10 +16,11 @@ body {
     justify-content: center;
     background: rgb(255, 255, 255);
     max-width: 80%;
-    margin: auto;
+    margin: 10px;
     border: 1px solid black;
     border-radius: 10px;
     height: calc(100vh-80px);
+    
 }
 
 h1 {
@@ -28,6 +33,18 @@ h2 {
     margin-top: 0;
     margin-bottom: 20px;
 }
+.save-el{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    max-width: 200px;
+}
+/* p{
+    position: relative;
+} */
+
 
 button {
     border: 1px solid black;
