@@ -1,7 +1,6 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     background-image: url("shopping.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,13 +12,26 @@ body {
 .container {
     display: grid;
     place-items: center;
-    justify-content: center;
     background: rgb(255, 255, 255);
-    width: 70%;
+    width: 50%;
     border: 1px solid black;
     border-radius: 10px;
     height: 70%;
-    /* padding: 10px; */
+    padding: 30px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-height: 70%;
+    overflow: scroll;
+    padding: 30px;
+
 }
 
 h1 {
@@ -34,18 +46,17 @@ h2 {
     margin-bottom: 20px;
     font-size: clamp(1.875rem, -0.0781rem + 6.25vw, 3.4375rem);
 }
-.save-el{
+
+.save-el {
     display: flex;
     position: relative;
-    align-items: center;
-    justify-content: center;
+    place-items: center;
     padding: 10px;
-    max-width: 200px;
 }
-/* p{
-    position: relative;
-} */
-
+.save-el p {
+    margin: 0;
+    white-space: nowrap;
+}
 
 button {
     border: 1px solid black;
@@ -70,4 +81,3 @@ button {
 #save-el {
     font-weight: bold;
 }
-
