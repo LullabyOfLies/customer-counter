@@ -8,7 +8,8 @@ body {
 
 .container {
     display: grid;
-    place-items: center;
+    align-items: center;
+    justify-content: center;
     background: white;
     max-width: 80%;
     margin: auto;
