@@ -12,27 +12,57 @@ body {
 .container {
     display: grid;
     place-items: center;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255, 0.9);
     width: 50%;
     border: 1px solid black;
     border-radius: 10px;
-    height: 70%;
+    height: auto;
     padding: 30px;
+    
 }
 
 .container1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    background: rgb(255, 255, 255, );
     width: 50%;
     border: 1px solid black;
     border-radius: 10px;
-    max-height: 70%;
-    overflow: scroll;
-    padding: 30px;
-
+    max-height: 250px;
+    padding: 10px;
+    top: 0%;
+    flex-direction: row;
+    overflow-y: auto;
+    margin-top: 10px;
+    
+}   
+p {
+    display: flex;
+    justify-items: center ;
+    align-items: center;
 }
+#save-el{
+    display: grid;
+    position: relative;
+    place-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    margin: 0;
+    padding: 10px;
+    letter-spacing: 1px;
+    top: 0%;
+    max-height: 250px;
+    height: 250px;
+    max-width: 80%;
+    text-align: center;
+    background: rgb(255, 255, 255,0.5);
+    
+    /* flex-direction: row;
+    overflow-y: auto; */
+}
+
 
 h1 {
     margin-top: 10px;
@@ -47,28 +77,52 @@ h2 {
     font-size: clamp(1.875rem, -0.0781rem + 6.25vw, 3.4375rem);
 }
 
-.save-el {
+/* .save-el {
     display: flex;
     position: relative;
     place-items: center;
     padding: 10px;
-}
-.save-el p {
-    margin: 0;
-    white-space: nowrap;
-}
+} */
 
+
+/* Default styles for the button */
 button {
     border: 1px solid black;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
     font-weight: bold;
-    width: 100%;
+    width: 50%;
+    max-width: 100%;
     margin-bottom: 5px;
     border-radius: 5px;
     position: relative;
-}
+  }
+  
+  /* Media query for small screens */
+  @media screen and (max-width: 600px) {
+    button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  /* Media query for medium screens */
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  
+  /* Media query for large screens */
+  @media screen and (min-width: 960px) {
+    button {
+      font-size: 18px;
+      padding: 12px;
+    }
+  }
+  
 
 #increment-btn {
     background: #2C2891;

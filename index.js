@@ -10,7 +10,7 @@ function increment() {
 function save() {
     let now = new Date();
     let timeStr = now.toLocaleTimeString();
-    let countStr = "\n" + timeStr + " : " + count + " people\n"
+    let countStr = "\n" + timeStr + " : " + count + " people||\n"
     saveEl.textContent += "\n" + countStr
     countEl.textContent = 0
     count = 0
